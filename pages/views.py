@@ -22,3 +22,20 @@ def about(request):
         "mvp_doctors": mvp_doctors
     }
     return render(request, 'pages/about.html', context)
+
+
+def office_style(request):
+    return render(request, 'pages/office_style.html')
+
+def romantic_style(request):
+    return render(request, 'pages/romantic_style.html')
+
+def family_friendly(request):
+    return render(request, 'pages/family_friendly.html')
+
+def study_focused(request):
+    return render(request, 'pages/study_focused.html')
+
+def room_prices(request):
+    return render(request, 'pages/room_prices.html')
+

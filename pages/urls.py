@@ -5,5 +5,10 @@ app_name = 'pages'
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('about', views.about, name='about')
+    path('about', views.about, name='about'),
+    path('office-style', views.office_style, name='office_style'),
+    path('romantic-style', views.romantic_style, name='romantic_style'),
+    path('family-friendly', views.family_friendly, name='family_friendly'),
+    path('study-focused', views.study_focused, name='study_focused'),
+    path('room-prices', views.room_prices, name='room_prices'),
 ]

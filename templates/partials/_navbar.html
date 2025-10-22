@@ -42,6 +42,27 @@
                 >Hostel services</a
               >
             </li>
+
+            <li {% if 'office-style' in request.path %} class="nav-item mr-3 active" {% else %} class="nav-item mr-3" {% endif %}>
+              <a class="nav-link" href="{% url 'pages:office_style' %}">Office-Style</a>
+            </li>
+
+            <li {% if 'romantic-style' in request.path %} class="nav-item mr-3 active" {% else %} class="nav-item mr-3" {% endif %}>
+              <a class="nav-link" href="{% url 'pages:romantic_style' %}">Romantic-Style</a>
+            </li>
+
+            <li {% if 'family-friendly' in request.path %} class="nav-item mr-3 active" {% else %} class="nav-item mr-3" {% endif %}>
+              <a class="nav-link" href="{% url 'pages:family_friendly' %}">Family-Friendly</a>
+            </li>
+
+            <li {% if 'study-focused' in request.path %} class="nav-item mr-3 active" {% else %} class="nav-item mr-3" {% endif %}>
+              <a class="nav-link" href="{% url 'pages:study_focused' %}">Study-Focused</a>
+            </li>
+
+            <li {% if 'room-prices' in request.path %} class="nav-item mr-3 active" {% else %} class="nav-item mr-3" {% endif %}>
+              <a class="nav-link" href="{% url 'pages:room_prices' %}">Room-Prices</a>
+            </li>
+
           </ul>
 
           <ul class="navbar-nav ml-auto">
