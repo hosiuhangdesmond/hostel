@@ -11,4 +11,6 @@ urlpatterns = [
     path('family-friendly', views.family_friendly, name='family_friendly'),
     path('study-focused', views.study_focused, name='study_focused'),
     path('room-prices', views.room_prices, name='room_prices'),
+    path('personal-data', views.personal_data, name='personal_data'),
+    path('disclaimer', views.disclaimer, name='disclaimer'),
 ]

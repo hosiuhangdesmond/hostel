@@ -35,8 +35,9 @@
             <li {% if 'listings' in request.path %} class="nav-item mr-3 active" {% else %} class="nav-item mr-3" {% endif %}
 
             >
-
+            <!-- wrong
             <li class="nav-item mr-3">
+          -->
             {% comment %} (DONE)fix listings.html {% endcomment %}
               <a class="nav-link" href={% url "listings:listings" %}
                 >Hostel services</a
@@ -61,6 +62,14 @@
 
             <li {% if 'room-prices' in request.path %} class="nav-item mr-3 active" {% else %} class="nav-item mr-3" {% endif %}>
               <a class="nav-link" href="{% url 'pages:room_prices' %}">Room-Prices</a>
+            </li>
+
+            <li {% if 'personal-data' in request.path %} class="nav-item mr-3 active" {% else %} class="nav-item mr-3" {% endif %}>
+              <a class="nav-link" href="{% url 'pages:personal_data' %}">Personal-Data</a>
+            </li>
+
+            <li {% if 'disclaimer' in request.path %} class="nav-item mr-3 active" {% else %} class="nav-item mr-3" {% endif %}>
+              <a class="nav-link" href="{% url 'pages:disclaimer' %}">Disclaimer</a>
             </li>
 
           </ul>

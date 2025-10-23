@@ -19,11 +19,19 @@ district_choices ={
                     "Wan Chai":"Wan Chai"
 }
 
+#room_choices = {
+#    "Private Rooms":"Private Rooms",
+#    "Semi-Private Rooms":"Semi-Private Rooms",
+#    "Standard (Multi-bed) Rooms":"Standard (Multi-bed) Rooms"
+#}
+
 room_choices = {
-    "Private Rooms":"Private Rooms",
-    "Semi-Private Rooms":"Semi-Private Rooms",
-    "Standard (Multi-bed) Rooms":"Standard (Multi-bed) Rooms"
+    "Office-Style":"Office-Style",
+    "Romantic-Style":"Romantic-Style",
+    "Family-Friendly":"Family-Friendly",
+    "Study-Focused":"Study-Focused"
 }
+
 rooms_choices = {
     '1':'1',
     '2':'2',

@@ -39,3 +39,8 @@ def study_focused(request):
 def room_prices(request):
     return render(request, 'pages/room_prices.html')
 
+def personal_data(request):
+    return render(request, 'pages/personal_data.html')
+
+def disclaimer(request):
+    return render(request, 'pages/disclaimer.html')
