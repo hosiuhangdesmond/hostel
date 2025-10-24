@@ -6,7 +6,7 @@
         <div class="col-md-12">
             {% comment %} search {% endcomment %}
             <form action="{% url 'listings:search' %}">
-            <!-- Form Row 1 -->
+            <!-- Form Row 1 
             <div class="form-row">
                 <div class="col-md-12 mb-3">
                 <label class="sr-only">Keywords</label>
@@ -14,11 +14,12 @@
                     type="text"
                     name="keywords"
                     class="form-control"
-                    placeholder="Keyword (Clinic, Doctor, City name, Town name, etc)"
+                    placeholder="Keyword"
                     value="{{values.keywords}}"
                 />
                 </div>
             </div>
+            -->
             <!-- Form Row 2 -->
             <div class="form-row">
                 <div class="col-md-4 mb-3">
@@ -32,6 +33,7 @@
                     {% endfor %}
                 </select>
                 </div>
+                <!--
                 <div class="col-md-4 mb-3">
                 <label class="sr-only">Rooms</label>
                 <select name="rooms" class="form-control">
@@ -43,6 +45,7 @@
                     {% endfor %}
                 </select>
                 </div>
+                
                 <div class="col-md-4 mb-3">
                 <select name="room_type" class="form-control" id="type">
                     <option {% if not values.room_type %} selected="true" {% endif %} value=''>
@@ -53,6 +56,7 @@
                     {% endfor %}
                 </select>
                 </div>
+                -->
             </div>
             <button class="btn btn-secondary btn-block mt-4" type="submit">
                 Submit form
@@ -109,18 +113,18 @@
                 <hr />
                 <div class="row py-2 text-secondary">
                 <div class="col-6">
-                    <i class="fas fa-th-large"></i> Services {{listing.service}}
+                    <i class="fas fa-th-large"></i> 辦公室型房間
                 </div>
                 <div class="col-6">
-                    <i class="fas fa-dumbbell"></i> Screens {{listing.screen}} 
+                    <i class="fas fa-dumbbell"></i> 浪漫型房間
                 </div>
                 </div>
                 <div class="row py-2 text-secondary">
                 <div class="col-6">
-                    <i class="fas fa-bed"></i> Rooms {{listing.rooms}}
+                    <i class="fas fa-bed"></i> 歡樂型房間
                 </div>
                 <div class="col-6">
-                    <i class="fas fa-bath"></i> Professionals {{listing.professional}}
+                    <i class="fas fa-bath"></i> 專注型房間
                 </div>
                 </div>
                 <hr />
@@ -129,7 +133,7 @@
                 </div>
                 <div class="row text-secondary pb-2">
                 <div class="col-12">
-                    <i class="fas fa-clock"></i> Reservation required
+                    <i class="fas fa-clock"></i> Hostel Manager
                 </div>
                 </div>
                 
@@ -144,7 +148,7 @@
         {% endfor %}
         {% else %}
         <div class="col-md-12">
-            <p>No Clinic available</p>
+            <p><span style="color: blue; font-weight: bold;">No Hostel available. Please select other district.</span></p>
         </div>
         {% endif %}
         

@@ -62,18 +62,21 @@
                 <hr />
                 <div class="row py-2 text-secondary">
                   <div class="col-6">
-                    <i class="fas fa-th-large"></i> Services {{listing.service}}
+                    <!--
+                    <i class="fas fa-th-large"></i> 辦公室型房間 {{listing.service}}
+                  -->
+                    <i class="fas fa-th-large"></i> 辦公室型房間
                   </div>
                   <div class="col-6">
-                    <i class="fas fa-dumbbell"></i> Screens {{listing.screen}} 
+                    <i class="fas fa-dumbbell"></i> 浪漫型房間
                   </div>
                 </div>
                 <div class="row py-2 text-secondary">
                   <div class="col-6">
-                    <i class="fas fa-bed"></i> Rooms {{listing.rooms}}
+                    <i class="fas fa-bed"></i> 歡樂型房間
                   </div>
                   <div class="col-6">
-                    <i class="fas fa-bath"></i> Professionals {{listing.professional}}
+                    <i class="fas fa-bath"></i> 專注型房間
                   </div>
                 </div>
                 <hr />
@@ -82,7 +85,7 @@
                 </div>
                 <div class="row text-secondary pb-2">
                   <div class="col-12">
-                    <i class="fas fa-clock"></i> Reservation required
+                    <i class="fas fa-clock"></i> Hostel Manager
                   </div>
                 </div>
                 <hr />
@@ -96,7 +99,7 @@
           {% endfor %}
           {% else %}
           <div class="col-md-12">
-            <p>No Clinic available</p>
+            <p>No Hostel available</p>
           </div>
           {% endif %}
           
